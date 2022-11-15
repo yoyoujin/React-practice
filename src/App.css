@@ -1,38 +1,39 @@
-.App {
+.orange {
+  color: orange;
+}
+
+.profile {
+  position: relative;
+  width: 300px;
   text-align: center;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 9px 10px 29px -5px rgba(176, 170, 170, 0.75);
+  -webkit-box-shadow: 9px 10px 29px -5px rgba(176, 170, 170, 0.75);
+  -moz-box-shadow: 9px 10px 29px -5px rgba(176, 170, 170, 0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avartar {
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: skyblue;
 }
