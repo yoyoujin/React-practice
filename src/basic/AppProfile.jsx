@@ -6,6 +6,14 @@ import Avartar from './components/Avartar';
 function AppProfile() {
   return (
     <>
+      <button
+        onClick={(event) => {
+          console.log(event);
+          alert('버튼이 클릭됨!');
+        }}
+      >
+        버튼
+      </button>
       <Avartar
         image='https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHdvbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
         isNew={true}
