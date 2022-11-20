@@ -18,12 +18,12 @@ export default function AppMentor() {
     }));
   };
   const handleAdd = () => {
-    const newMentorName = prompt('추가할 멘토의 이름은 무엇인가요?');
-    const newMentorTitle = prompt('추가할 멘토의 직함은 무엇인가요?');
+    const name = prompt('추가할 멘토의 이름은 무엇인가요?');
+    const title = prompt('추가할 멘토의 직함은 무엇인가요?');
 
     setPerson((person) => ({
       ...person,
-      mentors: [{ name: newMentorName, title: newMentorTitle }, ...person.mentors],
+      mentors: [{ name, title }, ...person.mentors],
     }));
   };
   const handleDelete = () => {
