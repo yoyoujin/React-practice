@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import personReducer from './reducer/person-reducer';
 
-export default function AppMentor() {
+export default function AppMentorsImmer() {
   const [person, dispatch] = useReducer(personReducer, initialPerson);
 
   const handleUpdate = () => {
