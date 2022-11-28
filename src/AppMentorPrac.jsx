@@ -10,34 +10,34 @@ export default function AppMentor() {
     setPerson(() => ({
       ...person,
       mentors: person.mentors.map((mentor) => {
-        if(mentor.name === prev) {
-          return {...mentor, name: current}
+        if (mentor.name === prev) {
+          return { ...mentor, name: current };
         }
         return mentor;
-      })
-    }))
-  }
+      }),
+    }));
+  };
 
-  const handleAdd = (() => {
-    const name = prompt(`추가할 멘토의 이름은 무엇인가요?`)
-    const title = prompt(`추가할 멘토의 직함은 무엇인가요?`)
+  const handleAdd = () => {
+    const name = prompt(`추가할 멘토의 이름은 무엇인가요?`);
+    const title = prompt(`추가할 멘토의 직함은 무엇인가요?`);
 
     setPerson((person) => ({
       ...person,
-      mentors: [{name, title},...person.mentor];
-    }))
-  })
+      mentors: [{ name, title }, ...person.mentor],
+    }));
+  };
 
   const handleDelete = () => {
     const deleteName = prompt(`삭제할 멘토의 이름은 무엇인가요?`);
 
     setPerson((person) => ({
       ...person,
-      mentors: person.mentors.filter(mentor => {
-        mentor.name !== deleteName
-      })
-    }))
-  }
+      mentors: person.mentors.filter((mentor) => {
+        mentor.name !== deleteName;
+      }),
+    }));
+  };
 }
 
 const initialPerson = {
