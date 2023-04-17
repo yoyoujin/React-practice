@@ -1,10 +1,10 @@
 import React from 'react';
+import Avatar from './Avatar';
 
 const Profile = ({ image, name, title, tag }) => {
   return (
     <div className='profile'>
-      <img className='photo' src={image} alt='avatar' />
-      {tag && <span className='tag'>New</span>}
+      <Avatar image={image} tag={tag} />
       <h1>{name}</h1>
       <p>{title}</p>
     </div>
